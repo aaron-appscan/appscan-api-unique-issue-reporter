@@ -1,0 +1,18 @@
+# Generated reports may contain vulnerability details for a real application.
+out/
+*.report.html
+*.report.xml
+*.report.json
+
+# Credentials must never be committed.
+.env
+*.secret
+
+# Python build artefacts
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.venv/
+venv/

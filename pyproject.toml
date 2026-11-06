@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appscan-unique-issue-reporter"
+version = "1.0.0"
+description = "CLI that reports the unique AppScan issue types of an application, with AppScan definitions, fix guidance, and pre-filtered platform links."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["appscan", "hcl", "security", "dast", "sast", "reporting"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+# No third-party runtime dependencies by design - see SECURITY-DEPENDENCY-REVIEW.md.
+dependencies = []
+
+[project.scripts]
+appscan-unique-issues = "appscan_unique_issues.cli:main"
+
+[tool.setuptools]
+packages = ["appscan_unique_issues"]
